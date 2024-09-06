@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Copy Box</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="code-container">
+        <button class="copy-button" onclick="copyCode()">Copy Code</button>
+        <pre id="code-block">
+            <code>
+                <!-- Paste your code here -->
+                #include <stdio.h>
+
+                    int main() {
+                        char ch;
+                        int c;
+                    
+                        printf("Enter a key: ");
+                        scanf("%c", &ch);
+                        c = ch;
+                    
+                        if (c >= 65 && c <= 90) {
+                            printf("Capital letter\n");
+                        } 
+                        else if (c >= 97 && c <= 122) {
+                            printf("Small letter\n");
+                        } 
+                        else if (c >= 48 && c <= 57) {
+                            printf("Digit\n");
+                        } 
+                        else {
+                            printf("Special character\n");
+                        }
+                    
+                        return 0;
+                    }
+   
+
+                </code>
+        </pre>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
